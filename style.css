@@ -1,0 +1,40 @@
+h1{
+    border:5px solid blue;
+    text-align: center;
+    color: skyblue;
+}
+body{
+    background-color:grey;
+}
+.container{
+    border:3px solid mintcream;
+    background-color: skyblue;
+    display: inline-block;
+    text-align: center;
+    margin-left: 40%;
+    border-radius: 10%;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.button{
+    color: white;
+    background-color: blue;
+    padding: 20px 20px 20px 20px;
+    margin: 15px;
+    border: 2px solid white;
+    border-radius: 45%;
+    box-shadow: 0 2px 4px darkslategray;
+
+}
+input{
+    margin-top: 10px;
+    padding-left: 30px;
+    width: 325px;
+    height: 65px;
+    background-color: rgb(77, 171, 171);
+    color: rgb(243, 248, 246);
+    font-size: 30px;
+    border-radius: 15%;
+}
