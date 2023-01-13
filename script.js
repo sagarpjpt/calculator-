@@ -1,19 +1,23 @@
-
-let string="";
+let str="";
 let buttons = document.getElementsByClassName('button');
-Array.from(buttons).forEach((button)=>{
-    button.addEventListener("click",(e)=>{
+Array.from(buttons).forEach((item)=>{
+    item.addEventListener("click",(e)=>{
         if(e.target.innerHTML=='='){
-            string=eval(string);
-            document.querySelector("input").value=string;
+            str=eval(str);
+            document.querySelector("input").value=str;
         }
         else if(e.target.innerHTML=='AC'){
-            string="";
-            document.querySelector("input").value=string;
+            str="";
+            document.querySelector("input").value=str;
+        }
+        else if(e.target.innerHTML=='C'){
+            str=str.substring(0, str.length-1);
+            document.querySelector("input").value=str;
         }
         else{
-            string=string+e.target.innerHTML;
-            document.querySelector("input").value=string;
+            str=str+e.target.innerHTML;
+            document.querySelector("input").value=str;
         }
+        console.log(e.target.innerHTML);
     })
 })
