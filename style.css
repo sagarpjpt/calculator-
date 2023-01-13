@@ -2,15 +2,18 @@ h1{
     border:5px solid blue;
     text-align: center;
     color: skyblue;
+    background: linear-gradient(45deg,skyblue,blue,white);
 }
 body{
-    background-color:grey;
+    background-color:rgb(232, 253, 230);
 }
 .container{
-    border:3px solid mintcream;
+    padding: 5px;
+    border:10px solid rgb(16, 47, 86);
     background-color: skyblue;
     display: inline-block;
     border-radius: 10%;
+
 }
 .row{
     display: grid;
@@ -36,3 +39,4 @@ input{
     font-size: 30px;
     border-radius: 15%;
 }
+
